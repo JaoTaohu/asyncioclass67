@@ -64,7 +64,7 @@ async def customer_generation(queue: Queue, customers: int):
             await queue.put(customer)
             print("Customer put in line...")
         customer_count = customer_count + len(customers)
-        await asyncio.sleep(.001)
+        # await asyncio.sleep(.001)
         return customer_count
 
 
